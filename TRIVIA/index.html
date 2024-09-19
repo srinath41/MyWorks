@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIVIA Quiz Game</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landingPage" class="text-center">
+        <h1 class="trivia-title">TRIVIA</h1>
+        <button id="startBtn" class="btn btn-lg btn-primary">Start</button>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quizPage" class="container d-none">
+        <div id="hud">
+            <div id="progressText" class="hud-prefix">Question 1 of 10</div>
+            <div id="score" class="hud-main-text">0</div>
+            <div id="progressBar">
+                <div id="progressBarFull"></div>
+            </div>
+        </div>
+        <h2 id="question" class="fade-in"></h2>
+        <div class="choices fade-in">
+            <div class="choice-container"><span class="choice-text" data-number="1"></span></div>
+            <div class="choice-container"><span class="choice-text" data-number="2"></span></div>
+            <div class="choice-container"><span class="choice-text" data-number="3"></span></div>
+            <div class="choice-container"><span class="choice-text" data-number="4"></span></div>
+        </div>
+        <button id="submitBtn" class="btn btn-success mt-4 float-right">Submit</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="line"></div>
+        <p class="text-center">Built and Developed by Srinath</p>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>
